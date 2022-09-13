@@ -4,6 +4,8 @@ import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ data }) => {
 
+
+    //count
     const onAdd = (quanty) => {
         console.log(`Compraste ${quanty} unidades`);
     }

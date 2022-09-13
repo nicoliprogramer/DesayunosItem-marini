@@ -56,13 +56,6 @@ const ItemListContainer = (props) => {
   }, []);
 
 
-
-  //count
-  const onAdd = (quanty) => {
-    console.log(`Compraste ${quanty} unidades`);
-  }
-
-
   return (
     <div className="container">
       <div className="row">
@@ -75,11 +68,6 @@ const ItemListContainer = (props) => {
             <p className="text-center">{props.texto}</p>
           </div>
         </div>
-      </div>
-      <div>
-
-        <ItemCount initial={1} stock={5} onAdd={onAdd} />
-
       </div>
     </div>
 

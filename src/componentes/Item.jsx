@@ -1,4 +1,5 @@
 import React from "react";
+import ItemDetailContainer from "./ItemDetailContainer";
 
 const Item = ({ info }) => {
 
@@ -15,6 +16,7 @@ const Item = ({ info }) => {
           <h5 className="card-title">{title}</h5>
           <p className="card-text">${precio}</p>
           <button className="btn btn-primary">Agregar al carrito</button>
+
         </div>
       </div>
     </div>
