@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "./ItemList";
+import ItemCount from "./ItemCount";
 
 const items = [
   {
@@ -55,6 +56,13 @@ const ItemListContainer = (props) => {
   }, []);
 
 
+
+  //count
+  const onAdd = (quanty) => {
+    console.log(`Compraste ${quanty} unidades`);
+  }
+
+
   return (
     <div className="container">
       <div className="row">
@@ -68,7 +76,13 @@ const ItemListContainer = (props) => {
           </div>
         </div>
       </div>
+      <div>
+
+        <ItemCount initial={1} stock={5} onAdd={onAdd} />
+
+      </div>
     </div>
+
   );
 };
 
